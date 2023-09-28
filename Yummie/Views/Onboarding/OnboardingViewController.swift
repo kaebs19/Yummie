@@ -1,16 +1,15 @@
-// تم استيراد مكتبات UIKit اللازمة
 import UIKit
 
-// تعريف فئة `OnboardingViewController` التي ترث من `UIViewController`
 class OnboardingViewController: UIViewController {
+    
     // MARK: - Outlets
-    // تعريف واجهات المستخدم (Outlets) التي تمثل عناصر الواجهة
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
     
     // MARK: - Variables
-    // تعريف متغيرات الفئة
+
     var slides: [OnboardingSlide] = [] // مصفوفة تحتوي على معلومات الشرائح
     
     var currentPage = 0 { // متغير يتتبع الشريحة الحالية
